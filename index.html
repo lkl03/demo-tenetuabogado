@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TENETUABOGADO — Asesoramiento jurídico confiable</title>
+<meta name="description" content="TENETUABOGADO — Asesoramiento jurídico confiable"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;border:none;cursor:pointer;background:transparent;color:inherit}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opacity:0.025;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes widen{from{width:0}to{width:100%}}
+@keyframes slideLeft{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes scaleIn{from{opacity:0;transform:scale(0.96)}to{opacity:1;transform:scale(1)}}
+.reveal{opacity:0;animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+.reveal.d1{animation-delay:.1s}
+.reveal.d2{animation-delay:.25s}
+.reveal.d3{animation-delay:.4s}
+.reveal.d4{animation-delay:.55s}
+.reveal.d5{animation-delay:.7s}
+.scroll-reveal{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.scroll-reveal.visible{opacity:1;transform:translateY(0)}
+
+:root{--bg:#f5f3ef;--surface:#ffffff;--text:#2c2c2c;--muted:#6b6355;--accent:#556b2f;--accent-soft:rgba(85,107,47,0.1);--border:#e2ddd0;--font-d:'DM Serif Display',serif;--font-b:'DM Sans',sans-serif}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:16px;line-height:1.6}
+h1,h2,h3,h4{font-family:var(--font-d);font-weight:500;letter-spacing:-0.015em}
+nav{position:absolute;top:0;left:0;right:0;z-index:50;padding:24px 40px}
+nav .in{display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto}
+.logo{font-family:var(--font-d);font-size:24px;font-weight:500;color:var(--text)}
+nav .cta{font-family:var(--font-b);font-size:13px;letter-spacing:0.05em;font-weight:500;padding:12px 24px;background:var(--accent);color:#fff;border-radius:999px;transition:all .3s}
+nav .cta:hover{transform:scale(1.05)}
+@media(max-width:768px){nav{padding:16px 20px}.logo{font-size:18px}nav .cta{padding:8px 16px;font-size:12px}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=80&auto=format&fit=crop') center/cover no-repeat;z-index:0}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.92) 0%,rgba(255,255,255,0.6) 100%);z-index:1}
+.hero-in{position:relative;z-index:3;max-width:1400px;margin:0 auto;padding:120px 40px 60px;width:100%}
+.hero-i{display:flex;align-items:center;gap:16px;font-family:var(--font-b);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:32px}
+.hero-i::after{content:'';width:80px;height:1px;background:var(--muted)}
+.hero-t{font-size:clamp(48px,8vw,112px);font-weight:400;line-height:0.95;color:var(--text);margin-bottom:32px;max-width:1000px}
+.hero-a{font-size:20px;line-height:1.6;color:var(--muted);max-width:560px;margin-bottom:48px}
+.hero-r{display:flex;gap:16px;flex-wrap:wrap}
+@media(max-width:768px){.hero-in{padding:100px 20px 40px}}
+.btn-s{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;background:var(--accent);color:#fff;font-family:var(--font-b);font-weight:500;font-size:15px;border-radius:999px;transition:all .3s}
+.btn-s:hover{transform:translateY(-2px);box-shadow:0 16px 40px #556b2f50}
+.btn-g{display:inline-flex;align-items:center;gap:10px;padding:17px 35px;color:var(--text);font-family:var(--font-b);font-weight:500;font-size:15px;border-radius:999px;border:1px solid var(--border);transition:all .3s}
+.btn-g:hover{background:rgba(0,0,0,0.05)}
+.proof{background:var(--accent);padding:20px 0;color:#fff}
+.proof-i{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;font-family:var(--font-b);font-size:14px;max-width:1200px;margin:0 auto;padding:0 20px}
+.proof-b{font-family:var(--font-d);font-size:36px;font-weight:500}
+.proof-st{letter-spacing:4px;font-size:18px}
+section.bl{padding:140px 0}
+.bl-c{max-width:1400px;margin:0 auto;padding:0 40px}
+@media(max-width:768px){.bl-c{padding:0 20px}section.bl{padding:80px 0}}
+.intro-g{display:grid;grid-template-columns:1fr 1.3fr;gap:120px;align-items:start}
+.intro-l{font-family:var(--font-b);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}
+.intro-h{font-size:clamp(32px,4vw,48px);font-weight:400;line-height:1.15;margin-bottom:32px}
+.intro-b{font-size:18px;line-height:1.7;color:var(--muted);max-width:560px}
+@media(max-width:968px){.intro-g{grid-template-columns:1fr;gap:32px}}
+.svcs-b{margin-top:100px}
+.svcs-g{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--border);border-left:1px solid var(--border)}
+.svc-t{padding:48px 40px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);transition:all .4s}
+.svc-t:hover{background:var(--accent-soft)}
+.svc-t .n{font-family:var(--font-d);font-size:13px;color:var(--accent);letter-spacing:0.1em;margin-bottom:32px;display:block}
+.svc-t h3{font-size:24px;font-weight:500;margin-bottom:12px}
+.svc-t p{color:var(--muted);font-size:15px;line-height:1.6}
+@media(max-width:640px){.svcs-g{grid-template-columns:1fr}}
+.quote-b{margin-top:140px;padding:100px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center}
+.quote-big{font-family:var(--font-d);font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.3;max-width:1000px;margin:0 auto;color:var(--text)}
+.quote-at{margin-top:32px;font-family:var(--font-b);font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted)}
+.diff-b{margin-top:140px}
+.diff-l{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:60px}
+.diff-it{padding:32px 0;border-top:2px solid var(--accent)}
+.diff-it .n{font-family:var(--font-d);font-size:48px;color:var(--accent);margin-bottom:24px;font-weight:400}
+.diff-it h3{font-size:22px;font-weight:500;margin-bottom:12px}
+.diff-it p{color:var(--muted);font-size:15px;line-height:1.6}
+@media(max-width:768px){.diff-l{grid-template-columns:1fr;gap:24px}}
+.cta-b{margin-top:140px;padding:120px 0;background:var(--accent);text-align:center;color:#fff}
+.cta-b h2{font-size:clamp(40px,5vw,72px);margin-bottom:24px;color:inherit;font-weight:400}
+.cta-b p{font-size:18px;margin-bottom:48px;opacity:0.85;max-width:600px;margin:0 auto 48px}
+.cta-b .btn-s{background:#fff;color:var(--accent)}
+footer.m{padding:80px 0 40px}
+footer.m .in{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;max-width:1400px;margin:0 auto;padding:0 40px}
+footer.m .br{font-family:var(--font-d);font-size:32px;margin-bottom:12px;font-weight:500}
+footer.m .tag{color:var(--muted);font-size:14px;max-width:320px}
+footer.m .col h4{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:500}
+footer.m .col p{font-size:14px;color:var(--text);line-height:1.7}
+@media(max-width:768px){footer.m .in{grid-template-columns:1fr;gap:32px;padding:0 20px}}
+</style></head><body>
+<nav><div class="in"><span class="logo">TENETUABOGADO</span><a href="https://wa.me/5491141775815" target="_blank" rel="noopener" class="cta">Escribinos</a></div></nav>
+<section class="hero"><div class="hero-in">
+<div class="hero-i reveal">Estudio jurídico · Edición 2026</div>
+<h1 class="hero-t reveal d1">Asesoramiento jurídico confiable</h1>
+<p class="hero-a reveal d2">En TENETUABOGADO, nos especializamos en brindar asesoramiento jurídico personalizado y eficaz a nuestros clientes. Nuestro equipo de profesionales, liderado por nuestros abogados experimentados, se enfoca en entender las necesidades específicas de cada caso para ofrecer soluciones efectivas y precisas.</p>
+<div class="hero-r reveal d3">
+  <a href="https://wa.me/5491141775815" target="_blank" rel="noopener" class="btn-s">Escribinos →</a>
+  <a href="tel:01141775815" class="btn-g">Llamar →</a>
+</div>
+</div></section>
+
+<section class="bl scroll-reveal"><div class="bl-c">
+<div class="intro-g"><div><div class="intro-l">Sobre nosotros</div></div>
+<div><h2 class="intro-h">Asesoramiento jurídico confiable</h2><p class="intro-b">En TENETUABOGADO, nos especializamos en brindar asesoramiento jurídico personalizado y eficaz a nuestros clientes. Nuestro equipo de profesionales, liderado por nuestros abogados experimentados, se enfoca en entender las necesidades específicas de cada caso para ofrecer soluciones efectivas y precisas.</p></div></div>
+<div class="svcs-b"><div class="svcs-g">
+<div class="svc-t scroll-reveal" style="transition-delay:0ms">
+<span class="n">01</span><h3>Asesoramiento laboral</h3>
+<p>Análisis y resolución de conflictos laborales, negociación de contratos y asesoramiento en materia de normas laborales</p></div><div class="svc-t scroll-reveal" style="transition-delay:60ms">
+<span class="n">02</span><h3>Consultoría contractual</h3>
+<p>Revisión y redacción de contratos comerciales, análisis de cláusulas y condiciones, y asesoramiento en materia de cumplimiento contractual</p></div><div class="svc-t scroll-reveal" style="transition-delay:120ms">
+<span class="n">03</span><h3>Defensa legal</h3>
+<p>Representación y defensa de nuestros clientes en juicios y procedimientos legales, tanto en el ámbito civil como penal</p></div><div class="svc-t scroll-reveal" style="transition-delay:180ms">
+<span class="n">04</span><h3>Planificación patrimonial</h3>
+<p>Asesoramiento en la planificación y organización del patrimonio personal y familiar, incluyendo testamentos y sucesiones</p></div><div class="svc-t scroll-reveal" style="transition-delay:240ms">
+<span class="n">05</span><h3>Asesoramiento tributario</h3>
+<p>Análisis y planificación fiscal, asesoramiento en materia de impuestos y obligaciones tributarias, y representación ante la Administración Federal de Ingresos Públicos</p></div><div class="svc-t scroll-reveal" style="transition-delay:300ms">
+<span class="n">06</span><h3>Due diligence</h3>
+<p>Análisis y evaluación de riesgos legales y regulatorios en operaciones comerciales y transacciones empresariales</p></div>
+</div></div>
+</div></section>
+<section class="bl-c scroll-reveal"><div class="quote-b">
+<p class="quote-big">"Asesoramiento jurídico confiable"</p><p class="quote-at">— TENETUABOGADO</p>
+</div></section>
+<section class="bl scroll-reveal"><div class="bl-c"><div class="diff-b">
+<div class="intro-l">Por qué elegirnos</div><h2 class="intro-h">Nuestro enfoque</h2>
+<div class="diff-l">
+<div class="diff-it scroll-reveal" style="transition-delay:0ms">
+<div class="n">01</div><h3>Experiencia</h3>
+<p>Nuestros abogados cuentan con años de experiencia en el ejercicio de la profesión, lo que nos permite ofrecer asesoramiento práctico y efectivo</p></div><div class="diff-it scroll-reveal" style="transition-delay:100ms">
+<div class="n">02</div><h3>Enfoque personalizado</h3>
+<p>Nos enfocamos en entender las necesidades específicas de cada cliente para ofrecer soluciones personalizadas y precisas</p></div><div class="diff-it scroll-reveal" style="transition-delay:200ms">
+<div class="n">03</div><h3>Actualización constante</h3>
+<p>Nuestro equipo se mantiene actualizado sobre los últimos cambios y tendencias en el derecho argentino, lo que nos permite brindar asesoramiento siempre vigente y relevante</p></div>
+</div></div></div></section>
+<section class="cta-b scroll-reveal"><h2>Conversemos</h2>
+<p>01141775815 · Comuna 11, Concordia 2976, C1417 Cdad. Autónoma de Buenos Aires, Argentina</p>
+<a href="https://wa.me/5491141775815" target="_blank" rel="noopener" class="btn-s">Escribinos →</a>
+</section>
+<footer class="m"><div class="in">
+<div><div class="br">TENETUABOGADO</div><p class="tag">En TENETUABOGADO, nos especializamos en brindar asesoramiento jurídico personalizado y eficaz a nuestros clientes. Nuestro equipo de profesionales, liderado por nuestros abogados experimentados, se enfoca en entender las necesidades específicas de cada caso para ofrecer soluciones efectivas y precisas.</p></div>
+<div class="col"><h4>Contacto</h4><p>01141775815</p><p>Comuna 11, Concordia 2976, C1417 Cdad. Autónoma de Buenos Aires, Argentina</p></div>
+<div class="col"><h4>Rubro</h4><p>Asesor</p></div>
+</div></footer>
+<div class="eterlab-credit">
+  <div class="eterlab-credit-inner">
+    <p>©2026 | diseñado y desarrollado por <a href="https://eterlab.co/" target="_blank" rel="noreferrer">eterlab.</a></p>
+  </div>
+</div>
+<style>
+.eterlab-credit{background:#212121}
+.eterlab-credit-inner{max-width:1536px;margin:0 auto;padding:8px 16px}
+.eterlab-credit p{text-align:center;font-size:12px;color:rgba(255,255,255,0.8);font-family:'Montserrat',sans-serif;font-weight:400;margin:0;letter-spacing:0.01em}
+.eterlab-credit a{font-style:italic;color:rgba(255,255,255,0.9);transition:color .2s;text-decoration:none;font-weight:500}
+.eterlab-credit a:hover{color:#fff}
+</style><a href="https://wa.me/5491141775815" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+<style>
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:99;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(37,211,102,0.35);transition:all .3s cubic-bezier(.2,.8,.2,1)}
+.wa-float:hover{transform:scale(1.08) rotate(-5deg);box-shadow:0 20px 40px rgba(37,211,102,0.45)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+</style><script>
+(function(){
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.scroll-reveal').forEach(el => el.classList.add('visible'));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.scroll-reveal').forEach(el => io.observe(el));
+})();
+</script>
+</body></html>
